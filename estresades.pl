@@ -94,3 +94,4 @@ cantidadTareaEstresante(Persona, Cantidad):-
   persona(Persona),
   findall(Tarea, realizoTareaEstresante(Persona, Tarea), ListaTareas),
   length(ListaTareas, Cantidad).
+  

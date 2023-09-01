@@ -7,6 +7,7 @@ cree(macarena, magoCapria).
 cree(macarena, campanita).
 
 %diego no cree en nadie.
+%quiere(Persona, TipoDeSueño)
 quiere(gabriel, ganarLoteria([5, 9])).
 quiere(juan, futbolista(arsenal)).
 quiere(juan, cantante(100000)).

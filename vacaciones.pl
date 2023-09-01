@@ -32,9 +32,13 @@ puedeIr(Persona, Lugar, Alojamiento):-
 
 %Polimorfico porque alojamiento tiene distintos tipos
 %Si traigo otro alojamiento tengo que agregar otra funcion cumpleCondiciones
-cumpleCondiciones(hotel(_, Estrellas, MontoDia), MontoDia):- Estrellas > 3.
+cumpleCondiciones(hotel(_, Estrellas, MontoDia), MontoDia):-
+  Estrellas > 3.
+
 cumpleCondiciones(casa(garage, MontoDia), MontoDia).
+
 cumpleCondiciones(quinta(_, pileta, MontoDia), MontoDia).
+
 cumpleCondiciones(carpa(MontoDia), MontoDia).
 
 % 2) Conocer las personas que pueden ir a cualquier lugar ya que en todos los lugares tienen al menos un alojamiento en donde le alcanza el dinero para ir.

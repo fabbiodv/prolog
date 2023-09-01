@@ -33,7 +33,7 @@ peliculasQueLeGustaPorGenero(Persona, Genero, Peliculas) :-
             ),
             Peliculas).
 
-sublista([], []).
+sublista([], []). 
 sublista([Cab|Cola], [Cab|Resto]) :-
     sublista(Cola, Resto).
 sublista([_|Cola], Lista) :-
